@@ -15,6 +15,7 @@ from sklearn.pipeline import Pipeline
 
 def parse_args():
     parser = argparse.ArgumentParser()
+    parser.add_argument("--experiment-name-mlflow", required=True)
     parser.add_argument("--bucket-name", required=True)
     parser.add_argument("--filename", required=True)
     parser.add_argument("--output-path", required=True)
@@ -49,12 +50,16 @@ def main():
     args = parse_args()
 
     mlflow.set_tracking_uri(os.environ["MLFLOW_TRACKING_URI"])
-    mlflow.set_experiment("students-performance")
+    mlflow.set_experiment(args.experiment_name_mlflow)
 
-    with mlflow.start_run(run_name="preprocessing"):
+    with mlflow.start_run(run_name="preprocessing") as preproc_run:
 
-        run_id = run.info.run_id
+        run_id = preproc_run.info.run_id
+<<<<<<< HEAD
         with open("/tmp/run_id.txt", "w") as f:
+=======
+        with open("/tmp/preprocessing_run_id.txt", "w") as f:
+>>>>>>> fef5787 (Add ML worfklow for argo and bugfixes in ml scipts)
             f.write(run_id)
 
         df = load_data_from_s3(args.bucket_name, args.filename)

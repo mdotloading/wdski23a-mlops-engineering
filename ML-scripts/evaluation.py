@@ -11,6 +11,7 @@ from sklearn.metrics import mean_absolute_error
 
 def parse_args():
     parser = argparse.ArgumentParser()
+    parser.add_argument("--experiment-name-mlflow", required=True)
     parser.add_argument("--training-run-id", required=True)
     parser.add_argument("--preprocessing-run-id", required=True)
     parser.add_argument("--max-relative-error", type=float, default=4)
@@ -60,12 +61,16 @@ def main():
 
     mlflow.set_tracking_uri(os.environ["MLFLOW_TRACKING_URI"])
 
-    mlflow.set_experiment("students-performance")
+    mlflow.set_experiment(args.experiment_name_mlflow)
 
     with mlflow.start_run(run_name="evaluation") as eval_run:
 
-        run_id = run.info.run_id
+        run_id = eval_run.info.run_id
+<<<<<<< HEAD
         with open("/tmp/run_id.txt", "w") as f:
+=======
+        with open("/tmp/eval_run_id.txt", "w") as f:
+>>>>>>> fef5787 (Add ML worfklow for argo and bugfixes in ml scipts)
             f.write(run_id)
     
         client = MlflowClient()
