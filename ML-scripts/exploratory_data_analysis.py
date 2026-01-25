@@ -65,9 +65,9 @@ def main():
         "writing score",
     ]
 
-    with mlflow.start_run(run_name="eda") as eda_run:
+    with mlflow.start_run(run_name="eda"):
 
-        run_id = eda_run.info.run_id
+        run_id = run.info.run_id
         with open("/tmp/run_id.txt", "w") as f:
             f.write(run_id)
 

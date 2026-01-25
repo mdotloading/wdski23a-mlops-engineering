@@ -1,20 +1,19 @@
 apiVersion: argoproj.io/v1alpha1
 kind: WorkflowTemplate
 metadata:
-  generateName: ml-pipeline-
+  name: ml-pipeline-template
+  namespace: argo-workflows
 spec:
   entrypoint: ml-pipeline
   serviceAccountName: argo
-
   templates:
 
     # ----------------------------
-    # ENTRYPOINT DAG
+    # DAG ENTRYPOINT
     # ----------------------------
     - name: ml-pipeline
       dag:
         tasks:
-          # EDA
           - name: eda
             template: python-task
             arguments:
@@ -22,7 +21,6 @@ spec:
                 - name: script
                   value: /app/eda.py
 
-          # Preprocessing
           - name: preprocessing
             template: python-task
             arguments:
@@ -31,7 +29,6 @@ spec:
                   value: /app/preprocessing.py
             dependencies: [eda]
 
-          # Training
           - name: training
             template: python-task
             arguments:
@@ -42,7 +39,6 @@ spec:
                   value: "{{tasks.preprocessing.outputs.parameters.run_id}}"
             dependencies: [preprocessing]
 
-          # Evaluation
           - name: evaluation
             template: python-task
             arguments:
@@ -78,3 +74,18 @@ spec:
           - "{{inputs.parameters.preprocessing_run_id}}"
           - "--training-run-id"
           - "{{inputs.parameters.training_run_id}}"
+        env:
+          - name: MLFLOW_TRACKING_URI
+            value: "http://mlflow.mlops.svc.cluster.local:5000"
+          - name: MLFLOW_S3_ENDPOINT_URL
+            value: "http://minio.data-storage.svc.cluster.local:9000"
+          - name: AWS_ACCESS_KEY_ID
+            valueFrom:
+              secretKeyRef:
+                name: mlflow-minio-creds
+                key: accesskey
+          - name: AWS_SECRET_ACCESS_KEY
+            valueFrom:
+              secretKeyRef:
+                name: mlflow-minio-creds
+                key: secretkey

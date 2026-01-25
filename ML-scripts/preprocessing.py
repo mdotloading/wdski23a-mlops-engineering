@@ -51,9 +51,9 @@ def main():
     mlflow.set_tracking_uri(os.environ["MLFLOW_TRACKING_URI"])
     mlflow.set_experiment("students-performance")
 
-    with mlflow.start_run(run_name="preprocessing") as preproc_run:
+    with mlflow.start_run(run_name="preprocessing"):
 
-        run_id = preproc_run.info.run_id
+        run_id = run.info.run_id
         with open("/tmp/run_id.txt", "w") as f:
             f.write(run_id)
 

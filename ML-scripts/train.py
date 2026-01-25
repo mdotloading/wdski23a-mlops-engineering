@@ -60,7 +60,7 @@ def main():
 
     with mlflow.start_run(run_name="training") as parent_run:
 
-        run_id = parent_run.info.run_id
+        run_id = run.info.run_id
         with open("/tmp/run_id.txt", "w") as f:
             f.write(run_id)
 
