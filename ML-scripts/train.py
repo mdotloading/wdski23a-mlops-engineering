@@ -62,11 +62,7 @@ def main():
     with mlflow.start_run(run_name="training") as parent_run:
 
         run_id = parent_run.info.run_id
-<<<<<<< HEAD
-        with open("/tmp/run_id.txt", "w") as f:
-=======
         with open("/tmp/train_run_id.txt", "w") as f:
->>>>>>> fef5787 (Add ML worfklow for argo and bugfixes in ml scipts)
             f.write(run_id)
 
         mlflow.set_tag("pipeline_stage", "training")

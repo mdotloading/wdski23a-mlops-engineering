@@ -66,11 +66,7 @@ def main():
     with mlflow.start_run(run_name="evaluation") as eval_run:
 
         run_id = eval_run.info.run_id
-<<<<<<< HEAD
-        with open("/tmp/run_id.txt", "w") as f:
-=======
         with open("/tmp/eval_run_id.txt", "w") as f:
->>>>>>> fef5787 (Add ML worfklow for argo and bugfixes in ml scipts)
             f.write(run_id)
     
         client = MlflowClient()

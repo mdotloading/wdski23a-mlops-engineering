@@ -55,11 +55,7 @@ def main():
     with mlflow.start_run(run_name="preprocessing") as preproc_run:
 
         run_id = preproc_run.info.run_id
-<<<<<<< HEAD
-        with open("/tmp/run_id.txt", "w") as f:
-=======
         with open("/tmp/preprocessing_run_id.txt", "w") as f:
->>>>>>> fef5787 (Add ML worfklow for argo and bugfixes in ml scipts)
             f.write(run_id)
 
         df = load_data_from_s3(args.bucket_name, args.filename)

@@ -1,0 +1,403 @@
+[
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "Du bist ein KI-Assistent für Social Media Analyse.\nDeine Aufgabe ist es, User-Kommentare zu analysieren und strukturierte Daten im JSON-Format zu extrahieren.\nDas JSON muss folgende Felder enthalten: companies, persons, locations, organizations, groups, summary, language, adjectives, spelling_errors, bad_words.\nFalls keine Informationen für ein Feld vorhanden sind, nutze eine leere Liste []."
+      },
+      {
+        "role": "user",
+        "content": "Wenn Du Wert drauf legst, dann erwarten wir dies von Dir ebenfalls. Also troll Dich. Übrigens kommt hinter dem Komma ein Leerzeichen und nicht davor ;-)"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"companies\": [], \"persons\": [], \"locations\": [], \"organizations\": [], \"groups\": [], \"summary\": \"Der Nutzer fordert den Adressaten auf, sich zu entfernen, und weist auf einen Rechtschreibfehler hin, wobei ein spöttischer Ton verwendet wird.\", \"language\": \"DE\", \"adjectives\": [], \"spelling_errors\": [], \"bad_words\": [\"troll Dich\"]}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "Du bist ein KI-Assistent für Social Media Analyse.\nDeine Aufgabe ist es, User-Kommentare zu analysieren und strukturierte Daten im JSON-Format zu extrahieren.\nDas JSON muss folgende Felder enthalten: companies, persons, locations, organizations, groups, summary, language, adjectives, spelling_errors, bad_words.\nFalls keine Informationen für ein Feld vorhanden sind, nutze eine leere Liste []."
+      },
+      {
+        "role": "user",
+        "content": "Macht was ihr wollt, aber schreibt nicht \"Wir sind das Volk!\" Ihr seid nicht das Volk, ihr seid der verblendete, verblödete, braune Bodensatz des Volkes. Ihr seid der widerliche, nervende kleine Pickel am Arsch der Gesellschaft, aber sicherlich nicht das Volk!"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"companies\": [], \"persons\": [], \"locations\": [], \"organizations\": [], \"groups\": [\"Volk\", \"Gesellschaft\"], \"summary\": \"Der Nutzer kritisiert und beleidigt eine bestimmte Gruppe, die sich als 'das Volk' bezeichnet, und distanziert sie scharf von der restlichen Gesellschaft.\", \"language\": \"DE\", \"adjectives\": [\"verblendet\", \"verblödet\", \"braun\", \"widerlich\", \"nervend\", \"klein\"], \"spelling_errors\": [], \"bad_words\": [\"verblendet\", \"verblödete\", \"braune Bodensatz\", \"widerliche\", \"nervende kleine Pickel am Arsch der Gesellschaft\"]}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "Du bist ein KI-Assistent für Social Media Analyse.\nDeine Aufgabe ist es, User-Kommentare zu analysieren und strukturierte Daten im JSON-Format zu extrahieren.\nDas JSON muss folgende Felder enthalten: companies, persons, locations, organizations, groups, summary, language, adjectives, spelling_errors, bad_words.\nFalls keine Informationen für ein Feld vorhanden sind, nutze eine leere Liste []."
+      },
+      {
+        "role": "user",
+        "content": "Tja, wohl etwas schwierig, jetzt das Geld per Chip in die Heimat zu überweisen"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"companies\": [], \"persons\": [], \"locations\": [], \"organizations\": [], \"groups\": [], \"summary\": \"Der Nutzer äußert sich sarkastisch über die erschwerte Möglichkeit, Geld per Chip ins Ausland zu überweisen.\", \"language\": \"DE\", \"adjectives\": [\"schwierig\"], \"spelling_errors\": [], \"bad_words\": []}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "Du bist ein KI-Assistent für Social Media Analyse.\nDeine Aufgabe ist es, User-Kommentare zu analysieren und strukturierte Daten im JSON-Format zu extrahieren.\nDas JSON muss folgende Felder enthalten: companies, persons, locations, organizations, groups, summary, language, adjectives, spelling_errors, bad_words.\nFalls keine Informationen für ein Feld vorhanden sind, nutze eine leere Liste []."
+      },
+      {
+        "role": "user",
+        "content": "UInd das Glaube ich nicht,,,in Hotels in Arfrika habe ich sein Bild an der Wand hängen gesehen,,,das wahren seine Freunde!!!!!"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"companies\": [], \"persons\": [], \"locations\": [\"Arfrika\"], \"organizations\": [], \"groups\": [], \"summary\": \"Der Nutzer äußert Zweifel an einer Aussage und behauptet, das Bild einer Person in afrikanischen Hotels gesehen zu haben, was auf eine Verbindung zu diesen Orten oder Personen hindeuten soll.\", \"language\": \"DE\", \"adjectives\": [], \"spelling_errors\": [\"UInd (Und)\", \"Glaube (glaube)\", \"Arfrika (Afrika)\", \"wahren (waren)\"], \"bad_words\": []}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "Du bist ein KI-Assistent für Social Media Analyse.\nDeine Aufgabe ist es, User-Kommentare zu analysieren und strukturierte Daten im JSON-Format zu extrahieren.\nDas JSON muss folgende Felder enthalten: companies, persons, locations, organizations, groups, summary, language, adjectives, spelling_errors, bad_words.\nFalls keine Informationen für ein Feld vorhanden sind, nutze eine leere Liste []."
+      },
+      { "role": "user", "content": "und kein TTIP" },
+      {
+        "role": "assistant",
+        "content": "{\"companies\": [], \"persons\": [], \"locations\": [], \"organizations\": [], \"groups\": [], \"summary\": \"Der Nutzer spricht sich gegen TTIP aus.\", \"language\": \"DE\", \"adjectives\": [], \"spelling_errors\": [], \"bad_words\": []}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "Du bist ein KI-Assistent für Social Media Analyse.\nDeine Aufgabe ist es, User-Kommentare zu analysieren und strukturierte Daten im JSON-Format zu extrahieren.\nDas JSON muss folgende Felder enthalten: companies, persons, locations, organizations, groups, summary, language, adjectives, spelling_errors, bad_words.\nFalls keine Informationen für ein Feld vorhanden sind, nutze eine leere Liste []."
+      },
+      {
+        "role": "user",
+        "content": "Das ganze Gesindel dieser Welt kommt nach Deutschland. Alle haben angeblich ihre Ausweispapiere auf der Flucht (vor der Polizei?) verloren und unsere Behörden sind gar nicht in der Lage, die wahre Identität der Flüchtlinge festzustellen."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"companies\": [], \"persons\": [], \"locations\": [\"Deutschland\"], \"organizations\": [\"Polizei\", \"Behörden\"], \"groups\": [\"Flüchtlinge\"], \"summary\": \"Der Nutzer äußert sich abwertend und kritisch über Flüchtlinge und stellt die Kompetenz der Behörden in Frage.\", \"language\": \"DE\", \"adjectives\": [\"angeblich\", \"wahr\"], \"spelling_errors\": [], \"bad_words\": [\"Gesindel\"]}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "Du bist ein KI-Assistent für Social Media Analyse.\nDeine Aufgabe ist es, User-Kommentare zu analysieren und strukturierte Daten im JSON-Format zu extrahieren.\nDas JSON muss folgende Felder enthalten: companies, persons, locations, organizations, groups, summary, language, adjectives, spelling_errors, bad_words.\nFalls keine Informationen für ein Feld vorhanden sind, nutze eine leere Liste []."
+      },
+      {
+        "role": "user",
+        "content": "Inzwischen könnte ich beidem Wort \"bunt\" nur noch kotzen. Solange wirklich Fachkräfte kommen, hat ja kein Mensch was dagegen. Auch die Spanier und Italiener, die hier ihre Ausbildung machen, sind doch willkommen. Dieses Getue in den Medien geht mir tierisch auf den Senkel. Und sie wissen immer noch nicht (oder wollen es nicht wissen) worum es uns geht."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"companies\": [], \"persons\": [], \"locations\": [], \"organizations\": [], \"groups\": [\"Fachkräfte\", \"Spanier\", \"Italiener\", \"Medien\"], \"summary\": \"Der Nutzer äußert Unmut über die mediale Darstellung von Vielfalt und betont, dass qualifizierte Fachkräfte willkommen seien, kritisiert jedoch das Verhalten der Medien und fühlt sich missverstanden.\", \"language\": \"DE\", \"adjectives\": [\"bunt\", \"wirklich\", \"tierisch\"], \"spelling_errors\": [\"beidem (beiden)\"], \"bad_words\": []}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "Du bist ein KI-Assistent für Social Media Analyse.\nDeine Aufgabe ist es, User-Kommentare zu analysieren und strukturierte Daten im JSON-Format zu extrahieren.\nDas JSON muss folgende Felder enthalten: companies, persons, locations, organizations, groups, summary, language, adjectives, spelling_errors, bad_words.\nFalls keine Informationen für ein Feld vorhanden sind, nutze eine leere Liste []."
+      },
+      {
+        "role": "user",
+        "content": "Dieses Schreiben wurde dem Journalisten Albrecht Müller/ehemals Leiter Bundeskanzleramt zugespielt."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"companies\": [], \"persons\": [\"Albrecht Müller\"], \"locations\": [], \"organizations\": [\"Bundeskanzleramt\"], \"groups\": [\"Journalisten\"], \"summary\": \"Der Nutzer informiert darüber, dass ein bestimmtes Schreiben dem Journalisten Albrecht Müller zugespielt wurde.\", \"language\": \"DE\", \"adjectives\": [], \"spelling_errors\": [], \"bad_words\": []}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "Du bist ein KI-Assistent für Social Media Analyse.\nDeine Aufgabe ist es, User-Kommentare zu analysieren und strukturierte Daten im JSON-Format zu extrahieren.\nDas JSON muss folgende Felder enthalten: companies, persons, locations, organizations, groups, summary, language, adjectives, spelling_errors, bad_words.\nFalls keine Informationen für ein Feld vorhanden sind, nutze eine leere Liste []."
+      },
+      {
+        "role": "user",
+        "content": "In der Regierung haben doch schon alle das sonnenkönigsyndrom, lol"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"companies\": [], \"persons\": [], \"locations\": [], \"organizations\": [\"Regierung\"], \"groups\": [], \"summary\": \"Der Nutzer kritisiert die Mitglieder der Regierung und unterstellt ihnen überhebliches oder selbstherrliches Verhalten.\", \"language\": \"DE\", \"adjectives\": [\"sonnenkönig\"], \"spelling_errors\": [\"sonnenkönigsyndrom (Sonnenkönigsyndrom)\"], \"bad_words\": []}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "Du bist ein KI-Assistent für Social Media Analyse.\nDeine Aufgabe ist es, User-Kommentare zu analysieren und strukturierte Daten im JSON-Format zu extrahieren.\nDas JSON muss folgende Felder enthalten: companies, persons, locations, organizations, groups, summary, language, adjectives, spelling_errors, bad_words.\nFalls keine Informationen für ein Feld vorhanden sind, nutze eine leere Liste []."
+      },
+      {
+        "role": "user",
+        "content": "Korrekt, dass beste Beispiel warum Religionen, wenn sie zu streng ausgelegt werden, reiner Mist sind."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"companies\": [], \"persons\": [], \"locations\": [], \"organizations\": [], \"groups\": [\"Religionen\"], \"summary\": \"Der Nutzer kritisiert streng ausgelegte Religionen und bezeichnet sie als negativ.\", \"language\": \"DE\", \"adjectives\": [\"streng\", \"rein\"], \"spelling_errors\": [\"dass (das)\"], \"bad_words\": [\"Mist\"]}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "Du bist ein KI-Assistent für Social Media Analyse.\nDeine Aufgabe ist es, User-Kommentare zu analysieren und strukturierte Daten im JSON-Format zu extrahieren.\nDas JSON muss folgende Felder enthalten: companies, persons, locations, organizations, groups, summary, language, adjectives, spelling_errors, bad_words.\nFalls keine Informationen für ein Feld vorhanden sind, nutze eine leere Liste []."
+      },
+      { "role": "user", "content": "Diese pisser!!!" },
+      {
+        "role": "assistant",
+        "content": "{\"companies\": [], \"persons\": [], \"locations\": [], \"organizations\": [], \"groups\": [], \"summary\": \"Der Nutzer äußert sich beleidigend und abwertend gegenüber einer oder mehreren Personen.\", \"language\": \"DE\", \"adjectives\": [], \"spelling_errors\": [], \"bad_words\": [\"pisser\"]}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "Du bist ein KI-Assistent für Social Media Analyse.\nDeine Aufgabe ist es, User-Kommentare zu analysieren und strukturierte Daten im JSON-Format zu extrahieren.\nDas JSON muss folgende Felder enthalten: companies, persons, locations, organizations, groups, summary, language, adjectives, spelling_errors, bad_words.\nFalls keine Informationen für ein Feld vorhanden sind, nutze eine leere Liste []."
+      },
+      {
+        "role": "user",
+        "content": "völliger Quatsch, welche Partei mit den Grünen oder Linken sympathisiert kann nichts gutes für das deutsche Volk wollen ebenso wie die komischen Christlichen."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"companies\": [], \"persons\": [], \"locations\": [], \"organizations\": [\"Grünen\", \"Linken\"], \"groups\": [\"deutsche Volk\", \"Christlichen\"], \"summary\": \"Der Nutzer kritisiert Parteien, die mit den Grünen, Linken oder christlichen Parteien sympathisieren, und unterstellt ihnen, nichts Gutes für das deutsche Volk zu wollen.\", \"language\": \"DE\", \"adjectives\": [\"völlig\", \"gut\", \"komisch\", \"christlich\", \"deutsch\"], \"spelling_errors\": [\"welche (Welche)\", \"deutsche (deutsche)\", \"Christlichen (Christlichen)\"], \"bad_words\": []}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "Du bist ein KI-Assistent für Social Media Analyse.\nDeine Aufgabe ist es, User-Kommentare zu analysieren und strukturierte Daten im JSON-Format zu extrahieren.\nDas JSON muss folgende Felder enthalten: companies, persons, locations, organizations, groups, summary, language, adjectives, spelling_errors, bad_words.\nFalls keine Informationen für ein Feld vorhanden sind, nutze eine leere Liste []."
+      },
+      { "role": "user", "content": "http://www.weihnachtsmarkt-dresden.net/" },
+      {
+        "role": "assistant",
+        "content": "{\"companies\": [], \"persons\": [], \"locations\": [\"Dresden\"], \"organizations\": [], \"groups\": [], \"summary\": \"Der Nutzer teilt einen Link ohne weiteren Kommentar oder Wertung.\", \"language\": \"DE\", \"adjectives\": [], \"spelling_errors\": [], \"bad_words\": []}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "Du bist ein KI-Assistent für Social Media Analyse.\nDeine Aufgabe ist es, User-Kommentare zu analysieren und strukturierte Daten im JSON-Format zu extrahieren.\nDas JSON muss folgende Felder enthalten: companies, persons, locations, organizations, groups, summary, language, adjectives, spelling_errors, bad_words.\nFalls keine Informationen für ein Feld vorhanden sind, nutze eine leere Liste []."
+      },
+      {
+        "role": "user",
+        "content": "die aus sicheren herkunftsländern nach hause schicken."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"companies\": [], \"persons\": [], \"locations\": [], \"organizations\": [], \"groups\": [], \"summary\": \"Der Nutzer fordert, Personen aus sicheren Herkunftsländern zurück in ihre Heimat zu schicken.\", \"language\": \"DE\", \"adjectives\": [], \"spelling_errors\": [\"herkunftsländern (Herkunftsländern)\"], \"bad_words\": []}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "Du bist ein KI-Assistent für Social Media Analyse.\nDeine Aufgabe ist es, User-Kommentare zu analysieren und strukturierte Daten im JSON-Format zu extrahieren.\nDas JSON muss folgende Felder enthalten: companies, persons, locations, organizations, groups, summary, language, adjectives, spelling_errors, bad_words.\nFalls keine Informationen für ein Feld vorhanden sind, nutze eine leere Liste []."
+      },
+      {
+        "role": "user",
+        "content": "Ramon De la Perez, ??????????Realist ??????????wohl eher medienverblödet ????????"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"companies\": [], \"persons\": [\"Ramon De la Perez\"], \"locations\": [], \"organizations\": [], \"groups\": [], \"summary\": \"Der Nutzer stellt die Realitätswahrnehmung von Ramon De la Perez in Frage und unterstellt ihm, durch Medien beeinflusst oder getäuscht zu sein.\", \"language\": \"DE\", \"adjectives\": [\"real\", \"medienverblödet\"], \"spelling_errors\": [], \"bad_words\": [\"medienverblödet\"]}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "Du bist ein KI-Assistent für Social Media Analyse.\nDeine Aufgabe ist es, User-Kommentare zu analysieren und strukturierte Daten im JSON-Format zu extrahieren.\nDas JSON muss folgende Felder enthalten: companies, persons, locations, organizations, groups, summary, language, adjectives, spelling_errors, bad_words.\nFalls keine Informationen für ein Feld vorhanden sind, nutze eine leere Liste []."
+      },
+      {
+        "role": "user",
+        "content": "https://wissenschaft3000.files.wordpress.com/2014/08/arschtritt.jpg?w=600"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"companies\": [], \"persons\": [], \"locations\": [], \"organizations\": [], \"groups\": [], \"summary\": \"Der Nutzer postet einen Link zu einem Bild, das vermutlich einen Tritt in den Hintern darstellt, was als Ausdruck von Kritik oder Ablehnung interpretiert werden kann.\", \"language\": \"DE\", \"adjectives\": [], \"spelling_errors\": [], \"bad_words\": [\"Arschtritt\"]}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "Du bist ein KI-Assistent für Social Media Analyse.\nDeine Aufgabe ist es, User-Kommentare zu analysieren und strukturierte Daten im JSON-Format zu extrahieren.\nDas JSON muss folgende Felder enthalten: companies, persons, locations, organizations, groups, summary, language, adjectives, spelling_errors, bad_words.\nFalls keine Informationen für ein Feld vorhanden sind, nutze eine leere Liste []."
+      },
+      {
+        "role": "user",
+        "content": "Die Würde des Menschen ist unantastbar. Es sei denn, man ist Deutscher."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"companies\": [], \"persons\": [], \"locations\": [], \"organizations\": [], \"groups\": [\"Deutscher\"], \"summary\": \"Der Nutzer äußert sich sarkastisch und kritisiert, dass die Menschenwürde für Deutsche nicht gleichermaßen geachtet wird.\", \"language\": \"DE\", \"adjectives\": [\"unantastbar\", \"deutsch\"], \"spelling_errors\": [], \"bad_words\": []}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "Du bist ein KI-Assistent für Social Media Analyse.\nDeine Aufgabe ist es, User-Kommentare zu analysieren und strukturierte Daten im JSON-Format zu extrahieren.\nDas JSON muss folgende Felder enthalten: companies, persons, locations, organizations, groups, summary, language, adjectives, spelling_errors, bad_words.\nFalls keine Informationen für ein Feld vorhanden sind, nutze eine leere Liste []."
+      },
+      {
+        "role": "user",
+        "content": "Was hat der Schuster gegen Pegida gehetzt und nun hat er ähnliche Erkenntnisse."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"companies\": [], \"persons\": [\"Schuster\"], \"locations\": [], \"organizations\": [\"Pegida\"], \"groups\": [], \"summary\": \"Der Nutzer weist darauf hin, dass Schuster früher Pegida kritisiert hat, nun aber ähnliche Ansichten vertritt.\", \"language\": \"DE\", \"adjectives\": [\"ähnlich\"], \"spelling_errors\": [], \"bad_words\": []}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "Du bist ein KI-Assistent für Social Media Analyse.\nDeine Aufgabe ist es, User-Kommentare zu analysieren und strukturierte Daten im JSON-Format zu extrahieren.\nDas JSON muss folgende Felder enthalten: companies, persons, locations, organizations, groups, summary, language, adjectives, spelling_errors, bad_words.\nFalls keine Informationen für ein Feld vorhanden sind, nutze eine leere Liste []."
+      },
+      { "role": "user", "content": "Prima" },
+      {
+        "role": "assistant",
+        "content": "{\"companies\": [], \"persons\": [], \"locations\": [], \"organizations\": [], \"groups\": [], \"summary\": \"Der Nutzer äußert positive Zustimmung.\", \"language\": \"DE\", \"adjectives\": [\"prima\"], \"spelling_errors\": [], \"bad_words\": []}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "Du bist ein KI-Assistent für Social Media Analyse.\nDeine Aufgabe ist es, User-Kommentare zu analysieren und strukturierte Daten im JSON-Format zu extrahieren.\nDas JSON muss folgende Felder enthalten: companies, persons, locations, organizations, groups, summary, language, adjectives, spelling_errors, bad_words.\nFalls keine Informationen für ein Feld vorhanden sind, nutze eine leere Liste []."
+      },
+      {
+        "role": "user",
+        "content": "jep...haben sie Recht...wir wollen och keene Schmarotzer und kriminelle ;)"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"companies\": [], \"persons\": [], \"locations\": [], \"organizations\": [], \"groups\": [\"Schmarotzer\", \"Kriminelle\"], \"summary\": \"Der Nutzer stimmt einer vorherigen Aussage zu und äußert sich abwertend gegenüber bestimmten Gruppen, die er als 'Schmarotzer' und 'kriminell' bezeichnet.\", \"language\": \"DE\", \"adjectives\": [\"kriminell\"], \"spelling_errors\": [\"och (auch)\", \"keene (keine)\"], \"bad_words\": [\"Schmarotzer\", \"kriminelle\"]}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "Du bist ein KI-Assistent für Social Media Analyse.\nDeine Aufgabe ist es, User-Kommentare zu analysieren und strukturierte Daten im JSON-Format zu extrahieren.\nDas JSON muss folgende Felder enthalten: companies, persons, locations, organizations, groups, summary, language, adjectives, spelling_errors, bad_words.\nFalls keine Informationen für ein Feld vorhanden sind, nutze eine leere Liste []."
+      },
+      {
+        "role": "user",
+        "content": "Ja es gibt ein Asyl Recht .... Das weiß ich .... Und laut eu muss man sich im ersten eu Land registrieren lassen .... Und das ist Deutschland ??? Ungarn befolgt dir Regeln Europas .... Und Ungarn lässt sie nicht über die grüne Grenze .... Deutschland macht doch auch langsam die Grenzen dicht ...."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"companies\": [], \"persons\": [], \"locations\": [\"Deutschland\", \"Ungarn\", \"Europa\"], \"organizations\": [\"EU\"], \"groups\": [], \"summary\": \"Der Nutzer äußert sich kritisch zur Asylpolitik und stellt infrage, warum Deutschland als erstes EU-Land für die Registrierung gilt, während andere Länder wie Ungarn die EU-Regeln befolgen und ihre Grenzen schließen.\", \"language\": \"DE\", \"adjectives\": [\"grün\", \"langsam\"], \"spelling_errors\": [\"Asyl Recht (Asylrecht)\", \"eu (EU)\", \"dir (die)\"], \"bad_words\": []}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "Du bist ein KI-Assistent für Social Media Analyse.\nDeine Aufgabe ist es, User-Kommentare zu analysieren und strukturierte Daten im JSON-Format zu extrahieren.\nDas JSON muss folgende Felder enthalten: companies, persons, locations, organizations, groups, summary, language, adjectives, spelling_errors, bad_words.\nFalls keine Informationen für ein Feld vorhanden sind, nutze eine leere Liste []."
+      },
+      {
+        "role": "user",
+        "content": "Ein gutes hat das ganze mit den Promis  ,sie kommen dann nicht mit der Ente Bombenalarm oder sollte womöglich kurz vorher so eine Meldung ein gehen . Die  Promis sehen das sicherlich eher als Verkaufveranstaltung  für ihre CD  die haben alle Dollerzeichen in den Augen ..Aber ich hab noch nie gehört das ein Türke vom Gröhnemeyer  oder so eine CD gekauft hat .  ;)"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"companies\": [], \"persons\": [\"Gröhnemeyer\"], \"locations\": [], \"organizations\": [], \"groups\": [\"Promis\", \"Türke\"], \"summary\": \"Der Nutzer äußert sich kritisch und sarkastisch über Prominente, unterstellt ihnen kommerzielle Absichten und äußert sich abschätzig über deren Zielgruppe.\", \"language\": \"DE\", \"adjectives\": [\"gut\", \"sicherlich\"], \"spelling_errors\": [\"Verkaufveranstaltung (Verkaufsveranstaltung)\", \"Dollerzeichen (Dollarzeichen)\", \"das ein Türke vom Gröhnemeyer oder so eine CD gekauft hat (dass ein Türke von Grönemeyer oder so eine CD gekauft hat)\", \"Gröhnemeyer (Grönemeyer)\"], \"bad_words\": []}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "Du bist ein KI-Assistent für Social Media Analyse.\nDeine Aufgabe ist es, User-Kommentare zu analysieren und strukturierte Daten im JSON-Format zu extrahieren.\nDas JSON muss folgende Felder enthalten: companies, persons, locations, organizations, groups, summary, language, adjectives, spelling_errors, bad_words.\nFalls keine Informationen für ein Feld vorhanden sind, nutze eine leere Liste []."
+      },
+      {
+        "role": "user",
+        "content": "Es gibt leider noch zu viele Deutsche Frauen die diese Männer auch nehmen und sich dann wundern warum die *Beziehung so scheiße ist oder gar die Kinder entführt werden."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"companies\": [], \"persons\": [], \"locations\": [], \"organizations\": [], \"groups\": [\"Deutsche Frauen\", \"Männer\", \"Kinder\"], \"summary\": \"Der Nutzer kritisiert deutsche Frauen dafür, Beziehungen mit bestimmten Männern einzugehen, und macht diese für negative Folgen wie schlechte Beziehungen oder Kindesentführungen mitverantwortlich.\", \"language\": \"DE\", \"adjectives\": [\"deutsch\", \"scheiße\"], \"spelling_errors\": [\"Deutsche Frauen (deutschen Frauen)\"], \"bad_words\": []}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "Du bist ein KI-Assistent für Social Media Analyse.\nDeine Aufgabe ist es, User-Kommentare zu analysieren und strukturierte Daten im JSON-Format zu extrahieren.\nDas JSON muss folgende Felder enthalten: companies, persons, locations, organizations, groups, summary, language, adjectives, spelling_errors, bad_words.\nFalls keine Informationen für ein Feld vorhanden sind, nutze eine leere Liste []."
+      },
+      {
+        "role": "user",
+        "content": "Ja die DDR lässt überall grüßen, ich wundere mich auch jeden Tag. Zensur, Einheitsmeinung, Volksentscheid unerwünscht. Propaganda-Medien. und eine durchgeknallte Staatsratsvorsitzende...."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"companies\": [], \"persons\": [], \"locations\": [\"DDR\"], \"organizations\": [], \"groups\": [\"Medien\"], \"summary\": \"Der Nutzer kritisiert die aktuelle politische Situation und Medienlandschaft, zieht Parallelen zur DDR und äußert sich abwertend über die Regierung.\", \"language\": \"DE\", \"adjectives\": [\"unerwünscht\", \"durchgeknallt\"], \"spelling_errors\": [], \"bad_words\": [\"durchgeknallte\"]}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "Du bist ein KI-Assistent für Social Media Analyse.\nDeine Aufgabe ist es, User-Kommentare zu analysieren und strukturierte Daten im JSON-Format zu extrahieren.\nDas JSON muss folgende Felder enthalten: companies, persons, locations, organizations, groups, summary, language, adjectives, spelling_errors, bad_words.\nFalls keine Informationen für ein Feld vorhanden sind, nutze eine leere Liste []."
+      },
+      {
+        "role": "user",
+        "content": "klar wirds geschluckt, juckt doch den Schlafmichel nicht a la \"Uns gehts doch alle gut\""
+      },
+      {
+        "role": "assistant",
+        "content": "{\"companies\": [], \"persons\": [], \"locations\": [], \"organizations\": [], \"groups\": [], \"summary\": \"Der Nutzer kritisiert sarkastisch die Gleichgültigkeit der Menschen gegenüber Missständen.\", \"language\": \"DE\", \"adjectives\": [\"gut\"], \"spelling_errors\": [\"alle (allen)\"], \"bad_words\": []}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "Du bist ein KI-Assistent für Social Media Analyse.\nDeine Aufgabe ist es, User-Kommentare zu analysieren und strukturierte Daten im JSON-Format zu extrahieren.\nDas JSON muss folgende Felder enthalten: companies, persons, locations, organizations, groups, summary, language, adjectives, spelling_errors, bad_words.\nFalls keine Informationen für ein Feld vorhanden sind, nutze eine leere Liste []."
+      },
+      { "role": "user", "content": "Ich denke die wissen genau was sie tun." },
+      {
+        "role": "assistant",
+        "content": "{\"companies\": [], \"persons\": [], \"locations\": [], \"organizations\": [], \"groups\": [], \"summary\": \"Der Nutzer äußert die Vermutung, dass die betreffenden Personen absichtlich handeln.\", \"language\": \"DE\", \"adjectives\": [], \"spelling_errors\": [], \"bad_words\": []}"
+      }
+    ]
+  }
+]
