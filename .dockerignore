@@ -1,0 +1,25 @@
+# outputs / artifacts
+outputs/
+output/
+reports/
+report/
+artifacts/
+eda/
+*.html
+
+# MLflow local runs
+mlruns/
+mlartifacts/
+
+# data
+data/
+*.csv
+*.parquet
+
+# python junk
+__pycache__/
+*.pyc
+
+# notebooks
+.ipynb_checkpoints/
+*.ipynb

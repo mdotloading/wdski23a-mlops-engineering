@@ -1,2 +1,7 @@
 .ipynb_checkpoints/
 *-checkpoint.ipynb
+/venv/
+venv/
+venv*
+env*
+env

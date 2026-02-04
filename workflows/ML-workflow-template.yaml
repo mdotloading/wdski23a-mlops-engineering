@@ -14,21 +14,17 @@ spec:
       - name: bucket-name
         value: "input-data"
       - name: filename
-        value: "student_performance_data.csv"
+        value: "housing.csv"
       - name: output-path
         value: "data/processed/"
       - name: test-size
         value: "0.2"
       - name: random-state
         value: "42"
-      - name: max-relative-error
-        value: "4.0"
-      - name: p95-relative-error
-        value: "0.3"
-      - name: mae-drift-factor
-        value: "1.2"
-      - name: max-mean-residual
-        value: "5.0"
+      - name: max-mae
+        value: "150000"
+      - name: max-rmse
+        value: "200000"
 
   templates:
 
@@ -87,10 +83,8 @@ spec:
                   --experiment-name-mlflow {{workflow.parameters.experiment-name-mlflow}}
                   --training-run-id {{steps.train.outputs.parameters.training-run-id}}
                   --preprocessing-run-id {{steps.preprocess.outputs.parameters.preprocessing-run-id}}
-                  --max-relative-error {{workflow.parameters.max-relative-error}}
-                  --p95-relative-error {{workflow.parameters.p95-relative-error}}
-                  --mae-drift-factor {{workflow.parameters.mae-drift-factor}}
-                  --max-mean-residual {{workflow.parameters.max-mean-residual}}
+                  --max-mae {{workflow.parameters.max-mae}}
+                  --max-rmse {{workflow.parameters.max-rmse}}
 
   # ----------------------
   # Base script runner
@@ -102,7 +96,7 @@ spec:
         - name: script
         - name: cli-args
     container:
-      image: ghcr.io/marius2311/python-for-ml:2.0.1
+      image: ghcr.io/mdotloading/python-ml-housing:0.1
       command: ["bash", "-c"]
       args:
         - python {{inputs.parameters.script}} {{inputs.parameters.cli-args}}
@@ -144,7 +138,7 @@ spec:
         - name: script
         - name: cli-args
     container:
-      image: ghcr.io/marius2311/python-for-ml:2.0.1
+      image: ghcr.io/mdotloading/python-ml-housing:0.1
       command: ["bash", "-c"]
       args:
         - python {{inputs.parameters.script}} {{inputs.parameters.cli-args}}
@@ -188,7 +182,7 @@ spec:
         - name: script
         - name: cli-args
     container:
-      image: ghcr.io/marius2311/python-for-ml:2.0.1
+      image: ghcr.io/mdotloading/python-ml-housing:0.1
       command: ["bash", "-c"]
       args:
         - python {{inputs.parameters.script}} {{inputs.parameters.cli-args}}
